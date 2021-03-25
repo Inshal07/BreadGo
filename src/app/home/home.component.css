@@ -1,14 +1,25 @@
 
 .container{
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 10px;
     margin-top: 120px;
     width: fit-content;
+    position: relative;
+    border-radius: 10px;
+   
+   box-shadow: 2px 2px greenyellow;
 }
 .title{
     font-size: 48px;
+    z-index: 2;
 }
 h2{
     font-size:18px ;
+    z-index: 2;
 }
 .display{
     font-size: 24px;
+}
+.btn{
+    box-shadow: 2px 2px green;
 }

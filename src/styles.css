@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 body{
+  font-family: Roboto; 
     background-image: url('../src/assets/2548748.jpg');
     opacity: 10;
   }

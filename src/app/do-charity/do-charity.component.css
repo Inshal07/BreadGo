@@ -1,8 +1,12 @@
 .jumbotron{
-    background-color: #ccdb86;
+    background-color: #cbdb86c7;
+    box-shadow: 2px 2px rgba(0, 202, 0, 0.74);
 }
 img{
     margin-bottom: 20px;
+}
+label{
+    font-weight: bolder;
 }
 @media screen{
     .jumbotron{

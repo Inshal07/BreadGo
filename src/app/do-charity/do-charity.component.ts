@@ -58,8 +58,9 @@ export class DoCharityComponent implements OnInit {
     })
   }
   openSnackBar() {
-    this.snackBar.open(this.alert, 'hello', {
+    this.snackBar.open(this.alert,'Congrats', {
       duration:3000,
+      verticalPosition: 'top'
     })
   }
   reset(){

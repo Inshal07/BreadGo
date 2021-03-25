@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AngularFireAuthGuard,  redirectUnauthorizedTo, redirectLoggedInTo} from '@angular/fire/auth-guard';
+import { HistoryComponent } from './history/history.component';
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login'])
 const redirectloggedInTodo = () => redirectLoggedInTo(['do'])
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path:'profile', component:ProfileComponent, canActivate: [AngularFireAuthGuard],  data: { authGuardPipe: redirectUnauthorizedToLogin }
+  },
+  {
+    path:'history', component:HistoryComponent
   }
 ];
 

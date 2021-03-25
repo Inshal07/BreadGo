@@ -22,6 +22,7 @@ import {environment} from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
+import { HistoryComponent } from './history/history.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { DatePipe } from '@angular/common';
     LoginComponent,
     NavComponent,
     ProfileComponent,
-    FooterNavComponent
+    FooterNavComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

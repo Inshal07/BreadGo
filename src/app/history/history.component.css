@@ -1,0 +1,8 @@
+.card{
+    padding: 10px;
+    box-shadow: 2px 2px rgba(66, 165, 0, 0.692);
+}
+.container{
+    padding: 20px;
+    background-color: rgba(113, 177, 108, 0.753);
+}
