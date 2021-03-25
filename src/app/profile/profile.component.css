@@ -1,0 +1,10 @@
+.jumbotron{
+    background-color: #ccdb86;
+    margin-top: 20px;
+    height: 500px;
+}
+@media screen{
+    .jumbotron{
+        height: 500px;
+    }
+}

@@ -9,6 +9,20 @@ import { DoCharityComponent } from './do-charity/do-charity.component';
 import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FooterNavComponent } from './footer-nav/footer-nav.component';
+// Material
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+//Firebase
+import {environment} from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { FormsModule } from '@angular/forms';
+import { DatePipe } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -17,14 +31,26 @@ import { ProfileComponent } from './profile/profile.component';
     DoCharityComponent,
     LoginComponent,
     NavComponent,
-    ProfileComponent
+    ProfileComponent,
+    FooterNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    AngularFireModule.initializeApp(environment.firebase),
+        
   ],
-  providers: [],
+  providers: [
+    DatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

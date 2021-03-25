@@ -1,0 +1,25 @@
+.container{
+    margin-top: 30px;
+    height: 550px;
+}
+mat-card{
+    width: 700px;
+    background-color: #ccdb86;
+    text-align: center;
+}
+input{
+    padding: 10px;
+}
+#OTP{
+    width: 200px;
+}
+label{
+    font-size: large;
+}
+
+@media screen and (max-width:300px){
+    input{
+       width: 200px;
+    }
+   
+}

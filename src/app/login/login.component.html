@@ -1,1 +1,45 @@
-<p>login works!</p>
+
+  <div class="container d-flex justify-content-center">
+    <mat-card class="example-card text-center">
+      <mat-card-title>
+        <h1 class=" mb-5">BreadGo</h1>
+      </mat-card-title>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Mobile Number</label>
+              <input type="number" [(ngModel)]="phoneNumber" name="phoneNumber"  class="form-control" id="exampleInputEmail1" placeholder="Enter Mobile number" required>
+            </div>
+            <div class="form-group form-check d-flex justify-content-center">
+              <div id="recaptcha-container"></div>
+            </div>
+            <button  class="btn btn-outline-dark"  (click)="sendOTP()" data-bs-toggle="modal" data-bs-target="#exampleModal">Send OTP</button>
+            <h2 *ngIf="status">
+              OTP is send succesfully
+            </h2>
+            <h3>{{error}}</h3>
+            <h2>{{status}}</h2>
+          </form>
+      </mat-card>
+  </div>
+
+  <div class="modal fade text-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+     
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body "> 
+          <label for="OTP" style="text-align: center;">OTP</label>
+          <div class="form-group text-center d-flex justify-content-center">
+            
+            <input type="text" class="form-control " id="OTP" placeholder="Enter OTP" name="otpverify" [(ngModel)]='verificationCode'>
+          </div>
+          <small >Please Verify the OTP</small>
+          <div class="form-group mt-3 d-flex justify-content-center" >
+              <button class="btn btn-outline-secondary algin" (click)="verifyOTP()" data-bs-dismiss="modal" aria-label="Close">Verify</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

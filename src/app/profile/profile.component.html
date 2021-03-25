@@ -1,1 +1,17 @@
-<p>profile works!</p>
+<app-nav></app-nav>
+<div class="container text-center">
+    <div class="jumbotron">
+        <h1 class="display-1">{{number}}</h1>
+        <h3>You Have been logged with this number </h3>
+        <div class="form">
+            <button class="btn btn-outline-danger" (click)="logout()" >logout</button>
+        </div>
+        <div class="form" *ngFor="let x of userHistory">
+            <p>{{x.phone}}</p>
+            <p>{{x.status}}</p>
+            <p>{{x.contactNo}}</p>
+        </div>
+    </div>
+    
+</div>
+<app-footer-nav></app-footer-nav>
