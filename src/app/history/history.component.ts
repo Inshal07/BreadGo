@@ -32,7 +32,7 @@ export class HistoryComponent implements OnInit {
      this.fireStore.firestore.collection('PickupOrders').where(
       'phone', '==', this.number).get().then(posts => {
         this.userdetails = posts.docs.map(e => {
-          console.log(e.data());
+         
           this.userHistory.push(e.data())
           this.histStatus =false
        

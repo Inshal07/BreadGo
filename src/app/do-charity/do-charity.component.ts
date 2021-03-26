@@ -27,7 +27,7 @@ export class DoCharityComponent implements OnInit {
   status: any;
   date:any
   contactNo:any
-  alert = "Congrats you just feed someones Tummy"
+  alert = "Congrats you just feed someones!"
   ngOnInit(): void {
     this.auth.getUser().subscribe(
       res => 
@@ -44,7 +44,8 @@ export class DoCharityComponent implements OnInit {
       pickUpTime: this.timeOfPickup,
       address:this.address,
       status: 'pending',
-      phone:this.phoneNumber
+      phone:this.phoneNumber,
+      postTime:new Date().toLocaleTimeString()
      }
     )
     .then(res=>{

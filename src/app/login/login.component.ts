@@ -70,6 +70,10 @@ export class LoginComponent implements OnInit {
   })
 }
 
-
+reset(){
+  this.phoneNumber =""
+  this.status = ""
+  this.verificationCode = ""
+}
 
 }

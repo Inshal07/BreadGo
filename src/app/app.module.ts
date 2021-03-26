@@ -23,6 +23,7 @@ import { AngularFireModule } from '@angular/fire';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import { HistoryComponent } from './history/history.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { HistoryComponent } from './history/history.component';
     MatDialogModule,
     MatSnackBarModule,
     AngularFireModule.initializeApp(environment.firebase),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
         
   ],
   providers: [
