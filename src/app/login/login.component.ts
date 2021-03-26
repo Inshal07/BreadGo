@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   user:any;
   status:any;
   error:any
+  statusOTP:any;
   constructor(
     public fireauth: AuthService,
     public dialog: MatDialog,
@@ -61,7 +62,7 @@ export class LoginComponent implements OnInit {
     .confirm(this.verificationCode)
     .then( (result: { user: any; }) => {
       this.user = result.user;
-      this.status = "OTP Verified"
+      this.statusOTP = "OTP Verified"
       this.router.navigate(['do'])
    })
    .catch( (error: any) => {
