@@ -1,6 +1,6 @@
 # BreadGo
 Link :https://breadgo-ac68d.firebaseapp.com/
-#breadGo
+## BreadGo
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
 ## Technology Used to Build:
  1. Angular 10.1.7
